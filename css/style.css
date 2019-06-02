@@ -46,7 +46,7 @@ p {
 }
 h2 {
 	font-size:15px;
-	color:#353535!important;
+	color:#353535;
 	text-transform:uppercase;
 	font-weight:bold;
 }
@@ -56,6 +56,17 @@ h2::after {
 	display:block;
 	width:65px;
 	margin:20px auto;
+}
+h3 {
+	text-transform:uppercase;
+}
+h4 {
+	text-transform:uppercase;
+	font-weight:bold;
+}
+h5 {
+	text-transform:uppercase;
+	font-weight:bold;
 }
 h6 {
 	font-size:15px;
@@ -453,8 +464,9 @@ table {
 }
 /* ==========================================================================Hero========================================================================== */
 .hero {
-	background: url('../img/header-bg.jpg') right bottom no-repeat;
-	background-size: contain;
+	background: url('../img/Andromeda.jpg') right bottom no-repeat;
+
+	background-size: cover;
 	padding:110px 0 100px 0;
 	height:auto;
 	background-color: #FBFBFB;
@@ -569,6 +581,9 @@ h1.arrow {
 }
 h1.arrow span {
     color: #E04343;
+}
+.circular--square { /* Reinhold */
+	border-radius: 80%;
 }
 /* ==========================================================================About========================================================================== */
 .about-image {
@@ -917,13 +932,13 @@ ul.social-buttons li:last-child {
 	margin-right:0;
 }
 .social-btn {
-	width:40px;
-	height:40px;
+	width:70px;
+	height:70px;
 	background: #E04343;
 	display:inline-block;
 	color:#fff;
 	font-size:17px;
-	line-height:40px;
+	line-height:90px;
 	text-align:center;
 }
 .social-btn:hover,.social-btn:focus {
