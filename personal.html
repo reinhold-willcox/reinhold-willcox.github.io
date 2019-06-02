@@ -28,6 +28,14 @@
     <script src="assets/html5shiv/html5shiv.js"></script>
     <script src="assets/respond/respond.min.js"></script>
     <![endif]-->
+
+	<script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+	<script>
+	$(document).ready(function(){
+	  $("#header").load(".header.html");
+	  $("#footer").load(".footer.html");
+	});
+	</script>
   </head>
     <body id="top">
 
@@ -38,48 +46,33 @@
 	  	<!-- ==========================
         HEADER SECTION 
         =========================== -->
-        <header id="home"> <!-- the id="home" bit, I think, applies to any href="index.html#home" -->
-		    <!-- creative menu -->
-            <div class="container-fluid">
-              <div class="row">
-                <div class="menu-wrap">
-				<nav class="menu">
-				    <!-- Menu Links -->
-					<div class="icon-list">
-						<a href="index.html#home"><i class="fa fa-fw fa-home"></i><span>Home</span></a>
-						<a href="research.html"><i class="fa fa-fw fa-quote-left"></i><span>Research</span></a>
-						<a href="about.html"><i class="fa fa-fw fa-quote-left"></i><span>About</span></a>
-						<a href="contact.html"><i class="fa fa-fw fa-quote-left"></i><span>Contact</span></a>
-					</div>
-				</nav>
-			    </div>
-			    <button class="menu-button" id="open-button"></button><!-- menu button -->
-              </div><!--/row-->
-            </div><!--/container-->
+        <header id="home"> <!-- the id="home" bit, I think, applies to any href="home.html#home" -->
+
+		<div id="header"></div>
+
 		  <!-- Header Image -->
           <section class="hero" id="hero">
             <div class="container">
 			  <!-- Slider Button (don't edit!)-->
               <div class="row">
                 <div class="col-md-12 text-right navicon">
-                  <a id="nav-toggle" class="nav_slide_button" href="index.html#"><span></span></a>
+                  <a id="nav-toggle" class="nav_slide_button" href="home.html#"><span></span></a>
                 </div>
               </div>
 			  <!-- HEADER HEADLINE -->
               <div class="row">
                 <div class="col-md-8 col-md-offset-1 inner">
                   <h1 class="animated fadeInDown">
-                    Reinhold<br/> <!-- J<span style="color:#FFE800;">o</span>hn<br/> -->
-                    <span style="color:#E04343">Willcox</span>
+                    Personal<br/> <!-- J<span style="color:#FFE800;">o</span>hn<br/> -->
+                    <span style="color:#E04343">Interests</span>
                   </h1><!-- Title -->
-				  <h3>Theoretical Astrophysicist</h3>
                   <!-- <h3 class="animated fadeInUp delay-05s"><span class="rotate">Web Designer,Photographer,3d Artist</span></h3><!- Text Rotator -> -->
                 </div>
               </div>
 			  <!-- Learn More Button -->
               <div class="row">
                 <div class="col-md-6 col-md-offset-3 text-center">
-                  <a href="index.html#about" class="scrollto wow fadeInUp delay-5s ">
+                  <a href="home.html#about" class="scrollto wow fadeInUp delay-5s ">
 			            <p>SEE MORE</p>
 			            <p class="scrollto--arrow"><img src="img/scroll-down.png" alt="scroll down arrow"></p>
 			        </a>
@@ -93,109 +86,60 @@
         HEADER SECTION END  
         =========================== -->
 		
-		
-		
-		
+
 		<!-- ==========================
-        ABOUT SECTION  
-        =========================== -->
-        <section class="intro text-center section-padding color-bg" id="about">
-          <div class="container">
-		    <!-- WELCOME TEXT -->
-            <div class="row">
-              <div class="col-md-8 col-md-offset-2 wp1">
-                <h1 class="arrow">A little <span>about</span> me</h1><!-- Headline -->
-				<!-- about / welcome text -->
-                <p>I am enough of an artist to draw freely upon my imagination. The point is that when I see a sunset or a <a href="#">waterfall</a> or something, for a split second it's so great, because for a little bit I'm out of my brain, and it's got nothing to do with me. I'm not trying to figure it out, you know what I mean? And I wonder if I can somehow find a way to maintain that mind stillness.</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-
-
-
-<!-- ==========================
         SERVICE SECTION 
         =========================== -->
-        <section class="features text-center section-padding" id="service">
-          <div class="container">
-        <!-- Headline -->
-            <div class="row">
-              <div class="col-md-12">
-                <h1 class="arrow">Find out more</h1>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12">
-          <div class="services">
-          <!-- Service Box 1 -->
-                  <div class="col-md-4 wp2 item">
-                    <a href="research.html"><div class="icon">
-                      <i class="fa fa-sun-o"></i><!-- Icon -->
-                    </div></a>
-                    <h2>Research Interests</h2><!-- Title -->
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum
-                    primis in faucibus.</p><!-- Description -->
-                  </div>
-          <!-- Service Box 2 -->
-                  <div class="col-md-4 wp2 item delay-05s">
-                    <a href="about.html"><div class="icon">
-                      <i class="fa fa-music"></i><!-- Icon -->
-                    </div></a>
-                    <h2>Personal Life</h2><!-- Title -->
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum
-                    primis in faucibus.</p><!-- Description -->
-                  </div>
-          <!-- Service Box 3 -->
-                  <div class="col-md-4 wp2 item delay-1s">
-                    <a href="contact.html"><div class="icon">
-                      <i class="fa fa-envelope-o"></i><!-- Icon -->
-                    </div></a>
-                    <h2>Contact me</h2><!-- Title -->
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum
-                    primis in faucibus.</p><!-- Description -->
-                  </div>
-          </div>
-                  <div class="clearfix"></div>
-              </div>
-            </div>
-          </div>
-        </section>
+		<div class="container-fluid">
+		    <!-- About 1 -->
+			<div class="row color-bg">
+				<div class="col-md-6 nopadding features-intro-img">
+					<div class="about-image" style="background-image:url(img/about1.png)"></div><!-- about image 1 -->
+				</div>
+				<div class="col-md-6 about-text">
+					<h6>Sports</h6><!-- headline-->
+					<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p><br><!-- About Text 1 -->
+					<a href="home.html#team" class="weight-outline-btn">Read more</a><!-- read more button  -->			
+				</div>
+			</div>
+			<!-- About 2 -->
+			<div class="row">
+				<div class="col-md-6 about-text">
+					<h6>Music</h6><!-- Headline -->
+					<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p><br><!-- About Text 2 -->
+					<a href="home.html#team" class="weight-outline-btn">Read more</a>	<!-- read more button  -->				
+				</div>
+				<div class="col-md-6 nopadding features-intro-img">
+					<div class="about-image" style="background-image:url(img/about2.png)"></div><!-- about image 2 -->
+				</div>
+			</div>
+			<!-- About 3 -->
+			<div class="row color-bg">
+				<div class="col-md-6 nopadding features-intro-img">
+					<div class="about-image" style="background-image:url(img/about3.png)"></div><!-- about image 3 -->
+				</div>
+				<div class="col-md-6 about-text">
+					<h6>Outreach</h6><!-- Headline-->
+					<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p><br><!-- About Text 3 -->
+					<a href="home.html#team" class="weight-outline-btn">Read more</a><!-- read more button  -->					
+				</div>
+			</div>
+		</div>
+		<!-- ==========================
+        ABOUT SECTION END
+        =========================== -->	
 
-		
-		
 		<!-- ==========================
         FOOTER SECTION
         =========================== -->
         <footer>
-		  <!-- Social Buttons - use font-awesome, past in what you want -->
-          <div align="center" class="row">
-            <div class="col-md-12">
-              <ul class="social-buttons">
-		   	    <li><a href="https://www.linkedin.com/in/reinhold-willcox/" class="social-btn"><i class="fa fa-linkedin-square"></i></a></li><!-- linkedin -->
-                <li><a href="https://github.com/reinhold-willcox" class="social-btn"><i class="fa fa-github-square"></i></a></li><!-- github -->
-                <li><a href="https://www.facebook.com/reinhold.willcox" class="social-btn"><i class="fa fa-facebook"></i></a></li><!-- facebook -->
-		  	    <li><a href="https://www.instagram.com/reinhold.willcox/" class="social-btn"><i class="fa fa-instagram"></i></a></li><!-- instagram -->
-              </ul>
-            </div>
-          </div>
-		  <!-- End of Social buttons -->
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12 text-center">
-                <p><a href="http://www.themewagon.com">All Rights Reserved. &copy; 2015</a>
-              </div>
-            </div>
-          </div>
-        </footer>
+	  	  <div id="footer"></div>
+		</footer>
 		<!-- ==========================
         FOOTER SECTION END
         =========================== -->		
 		
 		
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <!-- SmoothScroll -->           
     <script type="text/javascript" src="assets/smoothscroll/smoothscroll.js"></script>
     <!-- Bootstrap -->

@@ -28,6 +28,14 @@
     <script src="assets/html5shiv/html5shiv.js"></script>
     <script src="assets/respond/respond.min.js"></script>
     <![endif]-->
+
+	<script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+	<script>
+	$(document).ready(function(){
+	  $("#header").load(".header.html");
+	  $("#footer").load(".footer.html");
+	});
+	</script>
   </head>
     <body id="top">
 
@@ -38,31 +46,17 @@
 	  	<!-- ==========================
         HEADER SECTION 
         =========================== -->
-        <header id="home"> <!-- the id="home" bit, I think, applies to any href="index.html#home" -->
-		    <!-- creative menu -->
-            <div class="container-fluid">
-              <div class="row">
-                <div class="menu-wrap">
-				<nav class="menu">
-				    <!-- Menu Links -->
-					<div class="icon-list">
-						<a href="index.html"><i class="fa fa-fw fa-home"></i><span>Home</span></a>
-						<a href="research.html"><i class="fa fa-fw fa-quote-left"></i><span>Research</span></a>
-						<a href="about.html"><i class="fa fa-fw fa-quote-left"></i><span>About</span></a>
-						<a href="contact.html"><i class="fa fa-fw fa-quote-left"></i><span>Contact</span></a>
-					</div>
-				</nav>
-			    </div>
-			    <button class="menu-button" id="open-button"></button><!-- menu button -->
-              </div><!--/row-->
-            </div><!--/container-->
+        <header id="home"> <!-- the id="home" bit, I think, applies to any href="home.html#home" -->
+
+		<div id="header"></div>
+
 		  <!-- Header Image -->
           <section class="hero" id="hero">
             <div class="container">
 			  <!-- Slider Button (don't edit!)-->
               <div class="row">
                 <div class="col-md-12 text-right navicon">
-                  <a id="nav-toggle" class="nav_slide_button" href="index.html#"><span></span></a>
+                  <a id="nav-toggle" class="nav_slide_button" href="home.html#"><span></span></a>
                 </div>
               </div>
 			  <!-- HEADER HEADLINE -->
@@ -78,10 +72,10 @@
 			  <!-- Learn More Button -->
               <div class="row">
                 <div class="col-md-6 col-md-offset-3 text-center">
-                  <a href="index.html#about" class="scrollto wow fadeInUp delay-5s ">
+                  <a class="scrollto wow fadeInUp delay-5s ">
 			            <p>SEE MORE</p>
 			            <p class="scrollto--arrow"><img src="img/scroll-down.png" alt="scroll down arrow"></p>
-			        </a>
+			      </a>
                 </div>
               </div>
             </div>
@@ -147,33 +141,13 @@
         FOOTER SECTION
         =========================== -->
         <footer>
-		  <!-- Social Buttons - use font-awesome, past in what you want -->
-          <div align="center" class="row">
-            <div class="col-md-12">
-              <ul class="social-buttons">
-		   	    <li><a href="https://www.linkedin.com/in/reinhold-willcox/" class="social-btn"><i class="fa fa-linkedin-square"></i></a></li><!-- linkedin -->
-                <li><a href="https://github.com/reinhold-willcox" class="social-btn"><i class="fa fa-github-square"></i></a></li><!-- github -->
-                <li><a href="https://www.facebook.com/reinhold.willcox" class="social-btn"><i class="fa fa-facebook"></i></a></li><!-- facebook -->
-		  	    <li><a href="https://www.instagram.com/reinhold.willcox/" class="social-btn"><i class="fa fa-instagram"></i></a></li><!-- instagram -->
-              </ul>
-            </div>
-          </div>
-		  <!-- End of Social buttons -->
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12 text-center">
-                <p><a href="http://www.themewagon.com">All Rights Reserved. &copy; 2015</a>
-              </div>
-            </div>
-          </div>
-        </footer>
+		  <div id="footer"></div>
+		</footer>
 		<!-- ==========================
         FOOTER SECTION END
         =========================== -->		
 		
 		
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <!-- SmoothScroll -->           
     <script type="text/javascript" src="assets/smoothscroll/smoothscroll.js"></script>
     <!-- Bootstrap -->
