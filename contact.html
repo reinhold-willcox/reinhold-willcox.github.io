@@ -29,13 +29,6 @@
     <script src="assets/respond/respond.min.js"></script>
     <![endif]-->
 
-	<script src="https://code.jquery.com/jquery-1.11.1.js"></script>
-	<script>
-	$(document).ready(function(){
-	  $("#header").load(".header.html");
-	  $("#footer").load(".footer.html");
-	});
-	</script>
   </head>
     <body id="top">
 
@@ -48,7 +41,24 @@
         =========================== -->
         <header id="home"> <!-- the id="home" bit, I think, applies to any href="home.html#home" -->
 
-		<div id="header"></div>
+		  <!-- creative menu -->
+			<div class="container-fluid">
+				<div class="row">
+					<div class="menu-wrap">
+						<nav class="menu">
+							<!-- menu links -->
+							<div class="icon-list">
+								<a href="home.html#home"><i class="fa fa-fw fa-home"></i><span>home</span></a>
+								<a href="about.html"><i class="fa fa-fw fa-info-circle"></i><span>about</span></a>
+								<a href="research.html"><i class="fa fa-fw fa-sun-o"></i><span>research</span></a>
+								<a href="personal.html"><i class="fa fa-fw fa-music"></i><span>interests</span></a>
+								<a href="contact.html"><i class="fa fa-fw fa-envelope-o"></i><span>contact</span></a>
+							</div>
+						</nav>
+					</div>
+				<button class="menu-button" id="open-button"></button><!-- menu button -->
+				</div><!--/row-->
+			</div><!--/container-->
 
 		  <!-- Header Image -->
           <section class="hero" id="hero">
@@ -63,8 +73,8 @@
               <div class="row">
                 <div class="col-md-8 col-md-offset-1 inner">
                   <h1 class="animated fadeInDown">
-                    Get in<br/> <!-- J<span style="color:#FFE800;">o</span>hn<br/> -->
-                    <span style="color:#E04343">Touch</span>
+                    <!-- Get in<br/> <!- J<span style="color:#FFE800;">o</span>hn<br/> -->
+                    <span style="color:#E04343">Get in<br/>&nbsp Touch</span>
                   </h1><!-- Title -->
                 </div>
               </div>
@@ -106,14 +116,32 @@
 		<!-- ==========================
         FOOTER SECTION
         =========================== -->
-        <footer>
-		  <div id="footer"></div>
-		</footer>
+		<br>
+		<!-- Social Buttons - use font-awesome, past in what you want -->
+    <div align="center" class="row">
+      <div class="col-md-12">
+        <ul class="social-buttons">
+		  		<li><a href="https://www.linkedin.com/in/reinhold-willcox/" class="social-btn"><i class="fa fa-linkedin-square fa-2x"></i></a></li><!-- linkedin -->
+          <li><a href="https://github.com/reinhold-willcox" class="social-btn"><i class="fa fa-github-square fa-2x"></i></a></li><!-- github -->
+          <li><a href="mailto:reinhold.willcox@monash.edu" class="social-btn"><i class="fa fa-envelope-o fa-2x"></i></a></li><!-- mail -->
+        </ul>
+      </div>
+    </div>
+		<!-- End of Social buttons -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <p><a href="http://www.themewagon.com">All Rights Reserved. &copy; 2015</a>
+        </div>
+      </div>
+    </div>
 		<!-- ==========================
         FOOTER SECTION END
         =========================== -->		
 		
 		
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-1.11.1.js"></script>
     <!-- SmoothScroll -->           
     <script type="text/javascript" src="assets/smoothscroll/smoothscroll.js"></script>
     <!-- Bootstrap -->
@@ -136,38 +164,6 @@
 	<script src="js/main.js"></script>
 	<script src="js/script.js"></script>
 
-	<!-- GOOGLE MAPS DATA -->
-    <script type="text/javascript">
-    // When the window has finished loading create our google map below
-        google.maps.event.addDomListener(window, 'load', init);
-    
-        function init() {
-            // Basic options for a simple Google Map
-            // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
-            var mapOptions = {
-                // How zoomed in you want the map to start at (always required)
-                zoom: 15,
-                
-                scrollwheel: false,
-
-                // The latitude and longitude to center the map (always required)
-                center: new google.maps.LatLng(40.68961985411178, -74.01618003845215), // New York 
-
-                // How you would like to style the map. 
-                // This is where you would paste any style found on Snazzy Maps.
-                styles: [	{		featureType:'water',		stylers:[{color:'#F2F2F2'},{visibility:'on'}]	},{		featureType:'landscape',		stylers:[{color:'#FFFFFF'}]	},{		featureType:'road',		stylers:[{saturation:-100},{lightness:45}]	},{		featureType:'road.highway',		stylers:[{visibility:'simplified'}]	},{		featureType:'road.arterial',		elementType:'labels.icon',		stylers:[{visibility:'off'}]	},{		featureType:'administrative',		elementType:'labels.text.fill',		stylers:[{color:'#ADADAD'}]	},{		featureType:'transit',		stylers:[{visibility:'off'}]	},{		featureType:'poi',		stylers:[{visibility:'off'}]	}]
-            };
-
-            // Get the HTML DOM element that will contain your map 
-            // We are using a div with id="map" seen below in the <body>
-            var mapElement = document.getElementById('googlemaps');
-
-            // Create the Google Map using out element and options defined above
-            var map = new google.maps.Map(mapElement, mapOptions);
-        }
-	
-    </script>
-	
 	<!-- TEXT ROTATOR SETTINGS -->
     <script type="text/javascript">
     $(".rotate").textrotator({

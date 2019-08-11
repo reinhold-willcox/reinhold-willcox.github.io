@@ -932,13 +932,13 @@ ul.social-buttons li:last-child {
 	margin-right:0;
 }
 .social-btn {
-	width:70px;
-	height:70px;
+	width:40px;
+	height:40px;
 	background: #E04343;
 	display:inline-block;
 	color:#fff;
 	font-size:17px;
-	line-height:90px;
+	line-height:40px;
 	text-align:center;
 }
 .social-btn:hover,.social-btn:focus {
