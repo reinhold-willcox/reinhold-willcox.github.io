@@ -1,0 +1,27 @@
+@charset utf-8;
+
+
+.flannel-container{display:flex;min-height:100vh;flex-direction:column}@media(min-width:768px){.flannel-container{flex-direction:row}
+}@media(min-width:992px){.flannel-container{margin:0 auto;max-width:992px}}@media(min-width:1200px){.flannel-container{max-width:1200px}
+}.flannel-header{text-align:center;width:100%;padding:48px 24px 0}@media(min-width:768px){.flannel-header{width:33%;padding:64px 24px 0}
+}@media(min-width:1200px){.flannel-header{width:25%}}.flannel-site-avatar{margin:0 auto 24px;width:200px}
+@media(min-width:768px){.flannel-site-avatar{width:67%}}.flannel-header-title a:active,.flannel-header-title a:hover,.flannel-header-title a:link,.flannel-header-title a:visited{color:inherit;text-decoration:none}
+
+.flannel-header-navlinks ul{list-style:none;margin:0 -24px;padding:0;text-align:center;color:#000}
+
+.flannel-header-navlinks ul>li{padding-bottom:2px}.flannel-header-navlinks ul>li>a{display:block;padding:16px 24px;text-decoration:none}
+
+.flannel-header-navlinks ul>li>a.is-active,.flannel-header-navlinks ul>li>a:hover{background-color:#0000001a;font-weight:700}
+@media(max-width:767px){.flannel-header-navlinks{display:none}}.flannel-header-navlinks-toggle{padding-bottom:12px;cursor:pointer}
+
+.flannel-header.is-active .flannel-header-navlinks{display:block}.flannel-main{background-color:#fff;width:100%}
+@media(min-width:768px){.flannel-main{width:67%}}@media(min-width:1200px){.flannel-main{width:75%}
+}.flannel-article{padding:32px}@media(min-width:768px){.flannel-article{padding:48px}
+}.flannel-banner{width:100%;background-color:#fff;background-size:cover;background-position:50%;height:200px}
+@media(min-width:768px){.flannel-banner{height:240px}}@media(min-width:992px){.flannel-banner{height:280px}
+}a:active,a:hover,a:link,a:visited{color:#2196f3}a:link,a:visited{text-decoration:none}
+a:active,a:hover{text-decoration:underline}.about-image{display:block;margin:0 auto;padding:100% 0 0;width:100%;background-color:#ccc}
+
+.about-image,.project-image{background-size:cover;background-position:50%}.project-image{float:right;margin-left:16px;margin-bottom:16px;padding-top:96px;width:96px}
+
+.publication-pdf{border:1px solid #eee}.publication-pdf:hover{border-color:#2196f3}
