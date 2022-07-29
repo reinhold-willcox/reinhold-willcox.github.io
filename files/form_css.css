@@ -33,3 +33,11 @@ input[type=submit]:hover {
   background-color: #f2f2f2;
   padding: 20px;
 }
+/* Space out images horizontally */
+.img_item{
+    width: 30px;
+}
+.img_container{
+    overflow: scroll;
+    white-space:nowrap;
+}
