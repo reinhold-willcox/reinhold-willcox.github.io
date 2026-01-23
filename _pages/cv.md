@@ -26,7 +26,7 @@ Research experience
     * Teaching & supervision of master's and bachelors students
     * Telescope operator
 
-* Jan 2019 -- Mar 2023: Ph.D. student 
+* Jan 2019 -- Jan 2023: Ph.D. student 
   * Monash University, Australia
   * Supervisor: Prof. Ilya Mandel
   * Duties included: 
